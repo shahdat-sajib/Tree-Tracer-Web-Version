@@ -1,6 +1,7 @@
 import React from 'react'
 import './HomePageCss.css'
 import { Helmet } from 'react-helmet'
+import { useNavigate } from 'react-router-dom'
 import mainlogo from '../../logo/mainlogo.png'
 import searchIcon from '../../logo/searchIcon.png'
 import satViewImg from '../../logo/satViewImg.jpg'
@@ -9,6 +10,7 @@ import checkBtn from '../../logo/checkBtn.png'
 import { Button } from '@material-ui/core'
 
 function HomaPage() {
+  let navigate = useNavigate();
   return (
     //for background color
     <div>
@@ -52,7 +54,9 @@ function HomaPage() {
 
       {/* bottom button  */}
       <div className=' text-center '>
-        <Button style={{
+        <Button
+          onClick={() => { navigate('/TreeDetection') }}
+        style={{
           backgroundImage: `linear-gradient(to top, #02d8c4, #00d6da, #00d3ec, #2bcef9, #5dc8ff)`
         }}
           className='fw-bold rounded mt-5 px-4 shadow' variant="contained"
