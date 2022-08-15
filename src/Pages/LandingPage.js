@@ -71,7 +71,7 @@ function LandingPage() {
             </div> */}
 
             <div>
-                <Button className='btn' style={{
+                <Button className='btn shadow-lg' style={{
                     backgroundColor: "#1abc9c", width: "400px", height: "100px", border: 'none', borderRadius: "50% / 100%",
                     borderBottomLeftRadius: "0", borderBottomRightRadius: "0", position: 'fixed',
                     bottom: '0px'
